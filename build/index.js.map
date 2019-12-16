@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../src/",
+  "sources": [
+    "index.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;AAAA,MAAA,OAAA,EAAA;;EAAA,UAAA,GAAa;;EACb,OAAA,GAAU,MAAM,CAAC,OAAP,IAAkB,OAAA,CAAQ,SAAR;;EAC5B,OAAO,CAAC,MAAR,CAAe,UAAf,EAA2B,EAA3B,CACA,CAAC,GADD,CACK,QAAA,CAAC,YAAD,CAAA;WACH,YAAY,CAAC,QAAb,CAAsB,CAAA,CAAtB,EAA0B,QAAA,CAAC,KAAD,CAAA;aACxB,QAAQ,CAAC,IAAI,CAAC,SAAd,GAA0B;IADF,CAA1B;EADG,CADL;;EAIA,MAAM,CAAC,OAAP,GAAiB;AANjB",
+  "sourcesContent": [
+    "moduleName = 'rs-scroll-top'\r\nangular = window.angular or require 'angular'\r\nangular.module moduleName, []\r\n.run ($transitions) ->\r\n  $transitions.onFinish {}, (trans) ->\r\n    document.body.scrollTop = 0\r\nmodule.exports = moduleName"
+  ]
+}
